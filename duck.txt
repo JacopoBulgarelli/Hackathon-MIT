@@ -1,3 +1,253 @@
 hello duck!
 
 20 hours and version control always
+
+https://github.com/michael5fry/test_demo007.git
+
+
+
+
+miche@Fox MINGW64 /
+$ git config --list
+
+miche@Fox MINGW64 /
+$ git --version
+
+miche@Fox MINGW64 /
+$ git help config
+
+miche@Fox MINGW64 /
+$ git config --help
+
+
+miche@Fox MINGW64 ~
+$ cd Documents/
+
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05
+$ git init
+Initialized empty Git repository in C:/Users/miche/Documents/Git-Hub_21_05/.git/
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git status
+On branch master
+
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git add duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git commit -m "Commit this duck"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'miche@Fox.(none)')
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git config --global user.username michael5fry
+
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git config --global user.username michael5fry
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin
+
+
+
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'miche@Fox.(none)')
+
+
+
+
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git config --global user.email "michelangelo.bovoloni@gmail.com"
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git config --global user.name "michael5fry"
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git commit -m "initial commit"
+[master (root-commit) d7cc347] initial commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/michael5fry/test_demo007.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ cd ..
+
+miche@Fox MINGW64 ~/Documents
+$ cd GIT-HUB_2
+
+miche@Fox MINGW64 ~/Documents/GIT-HUB_2
+$ cd ../Git-Hub_21_05/
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ ll
+total 1
+-rw-r--r-- 1 miche 197609 50 May 21 18:43 duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin https://github.com/michael5fry/test_demo007.git
+error: remote origin already exists.
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin https://github.com/michael5fry/test_demo007.git
+error: remote origin already exists.
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to '?[200~'
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ ll
+total 1
+-rw-r--r-- 1 miche 197609 50 May 21 18:43 duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin https://github.com/michael5fry/test_demo007.git
+error: remote origin already exists.
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote rm origin
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin https://github.com/michael5fry/test_demo007.git
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/michael5fry/test_demo007.git'
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ ll
+total 1
+-rw-r--r-- 1 miche 197609 50 May 21 18:43 duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin https://github.com/michael5fry/test_demo007.git
+error: remote origin already exists.
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote rm origin
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git remote add origin https://github.com/michael5fry/test_demo007.git
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/michael5fry/test_demo007.git'
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ ll
+total 1
+-rw-r--r-- 1 miche 197609 50 May 21 18:43 duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/michael5fry/test_demo007.git'
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ ^C
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git commit -m "initial commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'miche@Fox.(none)')
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git config --global user.email "michelangelo.bovoloni@gmail.com"
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git config --global user.name "michael5fry"
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git commit -m "initial commit"
+[master (root-commit) d7cc347] initial commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 duck.txt
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 266 bytes | 266.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/michael5fry/test_demo007.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$ cd ..
+
+miche@Fox MINGW64 ~/Documents
+$ cd GIT-HUB_2
+
+miche@Fox MINGW64 ~/Documents/GIT-HUB_2
+$ cd ../Git-Hub_21_05/
+
+miche@Fox MINGW64 ~/Documents/Git-Hub_21_05 (master)
+$
